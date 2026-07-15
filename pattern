@@ -1,1 +1,43 @@
-# Jeet
+import java.util.*;
+class PATTREN{
+    public static void main(String args[]){
+        int num =9;
+        int space = 0,star =num;
+        int star1=9;
+        int space1 =4;
+        int middle =num/2;
+        for(int i=1;i<=num/2;i++){
+            for(int l=1;l<=space;l++){
+                System.out.print("  ");
+            }
+            for(int j =1;j<=star;j++){
+                System.out.print("* ");
+            }
+            for(int g =1;g<=2*i-3;g++){
+                System.out.print("  ");
+            }if(i==1){
+                for(int m =1;m<=num-1;m++){
+                    System.out.print("* ");
+                }
+            }if(i>=2){
+                for(int j =1;j<=star;j++){
+                    System.out.print("* ");
+                }
+            }
+            star-=2;
+            space++;
+            System.out.println();
+        }
+        for(int i=1;i<=num;i++){
+            for(int j=1;j<=space1;j++){
+                System.out.print("  ");
+            }
+            for(int k =1;k<=star1;k++){
+                System.out.print("* ");
+            }
+            space1++;
+            star1-=2;
+            System.out.println();
+        }
+    }
+}
